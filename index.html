@@ -439,21 +439,100 @@
           </div>
           
 <!--More projects-->
-          <div class="details-container color-container">
+<div class="details-container color-container">
+  <div class="article-container">
+      <img src="./assets/project_4.png" alt="Project 2" class="project-img">
+  </div>
+
+  <div class="spacer"></div> <!-- Spacer to add gap -->
+
+  <div class="article-container">
+      <img src="./assets/project_5.jpg" alt="Project 3" class="project-img">
+  </div>
+
+  <button class="modern-btn">More Projects</button>
+</div>
+
+<style>
+  .details-container {
+      text-align: center;
+      padding: 20px;
+      border-radius: 15px;
+      background: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      margin: auto;
+  }
+
+  .article-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .project-img {
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  .spacer {
+      height: 15px; /* Adjust the gap between images */
+  }
+
+  /* Modern button styling */
+  .modern-btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+  }
+
+  .modern-btn:hover {
+      background: linear-gradient(135deg, #5a75f0, #9152e6);
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  .modern-btn::after {
+      content: '→';
+      font-size: 18px;
+      transition: transform 0.3s;
+  }
+
+  .modern-btn:hover::after {
+      transform: translateX(5px);
+  }
+</style>
+
+
+        <!--<div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-4.png"
+                src="./assets/project_4.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
+            
             <div class="article-container">
               <img
                 src="./assets/project-9.jpg"
                 alt="Project 3"
                 class="project-img"
-              />
-              <!-- <div class="article-container">
+              /> --
+
+              <div class="article-container">
                 <img
                   src="./assets/project-6.png"
                   alt="Project 3"
